@@ -82,6 +82,9 @@
         &__link {
             margin-left: -60%;
             text-transform: capitalize;
+            &:hover {
+                border-bottom: 1px solid #404142;;
+            }
         }
     }
     .menu {

@@ -1,0 +1,28 @@
+.block {
+  margin-left: 15%;
+  margin-right: 6.5%;
+}
+
+button {
+  padding: 8px 16px;
+  font: inherit;
+  font-size: 13px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+  &.active {
+    color: #8b8b8b;
+    border: 1px solid  #404142;
+  }
+  &.white {
+    color: black;
+    &.active {
+      border: 1px solid  #ececec;
+    }
+  }
+}

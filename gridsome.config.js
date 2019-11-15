@@ -16,7 +16,20 @@ function addStyleResource (rule) {
       })
 }
 module.exports = {
-  siteName: 'Xroom',
+  siteName: 'Xrom IT',
+  siteDescription: '',
+  titleTemplate: 'Xrom IT',
+  icon: {
+    favicon: {
+      src: './src/assets/img/favicon.png',
+      sizes: [16, 32, 96]
+    },
+    touchicon: {
+      src: './src/assets/img/favicon.png',
+      sizes: [76, 152, 120, 167],
+      precomposed: true
+    }
+  },
   plugins: [],
   chainWebpack: config => {
     // Load variables for all vue-files

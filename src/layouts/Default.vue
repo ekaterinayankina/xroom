@@ -1,16 +1,24 @@
 <template>
   <div class="layout">
     <header>
-      <Header/>
+      <Header color="black"/>
     </header>
-    <slot/>
+      <transition name="fade" appear>
+          <main> <!-- a wrapper for slot is needed -->
+            <slot/>
+          </main>
+      </transition>
+   <footer>
+     <Footer/>
+   </footer>
   </div>
 </template>
 
 <script>
   import Header from "../components/Header";
+  import Footer from "../components/Footer";
   export default {
-    components: {Header}
+    components: {Footer, Header}
   }
 </script>
 
@@ -36,5 +44,15 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+header {
+  background-color: #171717;
+}
+.fade-enter-active {
+    transition: opacity .5s;
+}
+
+.fade-enter {
+    opacity: 0;
 }
 </style>

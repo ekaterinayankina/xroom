@@ -1,13 +1,13 @@
 <template>
-    <div class="header black">
+    <div class="header" v-bind:class="[ color ]">
         <div class="lang">
-            <button class="lang__button" v-bind:class="{ active: engIsActive}" v-on:click="toggleActive">eng</button>
-            <button class="lang__button" v-bind:class="{ active: ruIsActive}" v-on:click="toggleActive">ru</button>
+            <button class="lang__button" v-bind:class="[{ active: engIsActive }, color]" v-on:click="toggleActive">eng</button>
+            <button class="lang__button" v-bind:class="[{ active: ruIsActive }, color]" v-on:click="toggleActive">ru</button>
         </div>
         <div class="logo">
-            <Logo/>
+            <Logo v-bind:color="color"/>
         </div>
-        <nav class="nav">
+        <nav class="nav" v-bind:class="{ open: openMenu }">
             <g-link class="nav__link" to="/">Home</g-link>
             <g-link class="nav__link" to="/about/">Services</g-link>
             <g-link class="nav__link" to="/contact/">Solutions</g-link>
@@ -16,7 +16,7 @@
             <g-link class="nav__link" to="/contact/">Contact us</g-link>
         </nav>
         <div class="menu">
-            <Menu/>
+            <Menu v-bind:color="color" @checked="toggleMenu" />
         </div>
     </div>
 </template>
@@ -27,16 +27,26 @@
     export default {
         name: "Header",
         components: {Menu, Logo},
+        props: {
+            color: {
+                type: [String, Number],
+                required: true
+            }
+        },
         data () {
             return {
                 engIsActive: true,
-                ruIsActive: false
+                ruIsActive: false,
+                openMenu:false
             }
         },
         methods: {
             toggleActive: function() {
                 this.engIsActive = !this.engIsActive;
                 this.ruIsActive = !this.ruIsActive;
+            },
+            toggleMenu: function() {
+                this.openMenu = !this.openMenu;
             }
         }
     }
@@ -46,27 +56,20 @@
     .header {
         display: flex;
         align-items: center;
-        margin-bottom: 0;
-        padding: 10px 70px;
+        margin: 10px 70px;
         height: 100px;
-        &.black .lang .lang__button.active {
-            border: 1px solid  #404142;
+        overflow: hidden;
+        &.white {
+            .nav__link {
+                color: black;
+            }
         }
     }
     .lang {
         margin-top: 2px;
         &__button {
             margin: 2px;
-            padding: 8px 16px;
             min-width: 22px;
-            font-size: 13px;
-            color: white;
-            background-color: transparent;
-            border: none;
-            &.active {
-                color: #8b8b8b;
-                border: 1px solid  #ececec;
-            }
         }
     }
     .logo {
@@ -74,11 +77,17 @@
         margin-bottom: -53px;
     }
     .nav {
+        margin-right: 66px;
         margin-left: auto;
         padding-top: 4px;
         font-size: 13.8px;
         display: flex;
         justify-content: space-between;
+        transform: translateX(1000px);
+        transition: transform 1s;
+        &.open {
+            transform: none;
+        }
         &__link {
             margin-left: -60%;
             text-transform: capitalize;
@@ -88,20 +97,8 @@
         }
     }
     .menu {
-        margin-top: -42px;
-        margin-left: 65px;
-    }
-    button {
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-        cursor: pointer;
-        outline: none;
-        &::-moz-focus-inner {
-            border: none;
-        }
+/*        margin-top: -42px;
+        margin-left: 65px;*/
     }
     a {
         color: white;

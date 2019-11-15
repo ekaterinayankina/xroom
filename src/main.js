@@ -6,15 +6,20 @@ import '~/assets/sass/styles.scss'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import VueScrollReveal from 'gridsome-scroll-reveal';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import VueScrollTo from 'vue-scrollto';
+
 
 config.autoAddCss = false;
-library.add(faGithub, faTwitter)
+library.add(faGithub, faTwitter);
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  Vue.component('font-awesome', FontAwesomeIcon)
+  Vue.component('font-awesome', FontAwesomeIcon);
+  Vue.use(VueScrollReveal);
+  Vue.use(VueScrollTo);
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto'

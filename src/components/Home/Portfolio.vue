@@ -73,6 +73,7 @@
 
 <style lang="scss" scoped>
     .portfolio {
+        overflow: scroll;
         .content {
             display: flex;
             flex-wrap: wrap;

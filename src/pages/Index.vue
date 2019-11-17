@@ -1,27 +1,50 @@
 <template>
   <Layout>
-    <div class="black relative">
-      <TopBlock/>
-    </div>
-    <a href="#" v-scroll-to="'#we-create'">Scroll to #we-create</a>
-    <div class="second-block white" v-scroll-to="'#we-create'">
-      <TellStudyOffer/>
-    </div>
-    <div id="we-create" class="white" v-scroll-reveal="{ distance: '400px', duration: 600,  scale: 0.85 }">
-      <WeCreate/>
-    </div>
-    <div id="solution" class="black" v-scroll-reveal="{ distance: '400px', duration: 600,  scale: 0.85 }">
-      <Solution/>
-    </div>
-    <div id="technologies" class="white" v-scroll-reveal="{ distance: '400px', duration: 600,  scale: 0.85 }">
-      <Technologies/>
-    </div>
-    <div id="portfolio" class="black" v-scroll-reveal="{ distance: '400px', duration: 600,  scale: 0.85 }">
-      <Portfolio/>
-    </div>
-    <div id="clients" class="black" v-scroll-reveal="{ distance: '400px', duration: 600,  scale: 0.85 }">
-      <Clients/>
-    </div>
+    <full-page :options="options" id="fullpage" ref="fullpage">
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="black relative">
+          <TopBlock/>
+        </div>
+        <div class="second-block white">
+          <TellStudyOffer/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="white">
+          <WeCreate/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="black">
+          <Solution/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="white">
+          <Technologies/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="black">
+          <Portfolio/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <div class="black">
+          <Clients/>
+        </div>
+      </div>
+      <div class="section">
+        <div class="fp-bg"></div>
+        <Footer/>
+      </div>
+    </full-page>
   </Layout>
 </template>
 
@@ -33,13 +56,26 @@ import Solution from "../components/Home/Solution";
 import Technologies from "../components/Home/Technologies";
 import Portfolio from "../components/Home/Portfolio";
 import Clients from "../components/Home/Clients";
+import Footer from "../components/Footer";
 export default {
-  components: {Clients, Portfolio, Technologies, Solution, WeCreate, TellStudyOffer, TopBlock},
+  components: {Footer, Clients, Portfolio, Technologies, Solution, WeCreate, TellStudyOffer, TopBlock},
   metaInfo: {
     //title: 'Hello, world!'
   },
-  methods: {
-  }}
+  data() {
+    return {
+      options: {
+        licenseKey:'',
+        anchors: ['','we-create', 'solution', 'technologies', 'portfolio', 'clients','contact'],
+        fitToSection: false,
+        bigSectionsDestination: 'top',
+        touchSensitivity: 22,
+        scrollOverflow: true,
+        parallax: true
+      }
+    }
+  }
+}
 </script>
 
 <style>

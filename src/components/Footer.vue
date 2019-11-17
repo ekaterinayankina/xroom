@@ -8,7 +8,7 @@
                 </p>
             </div>
             <div class="button-wrapper">
-                <button>Make a project</button>
+                <button class="make">Make a project</button>
             </div>
         </div>
         <div class="contact-us">
@@ -80,18 +80,6 @@
                 align-items: center;
                 padding-top:20px;
                 padding-bottom: 90px;
-                button {
-                    padding: 12px 35px;
-                    font: inherit;
-                    font-size: 9px;
-                    font-weight: bold;
-                    color: #2f2f2f;
-                    background-color: transparent;
-                    cursor: pointer;
-                    outline: none;
-                    border: 1px solid #ececec;
-                    text-transform: uppercase;
-                }
             }
         }
         .contact-us {

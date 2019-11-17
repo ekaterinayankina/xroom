@@ -1,6 +1,7 @@
 <template>
-    <div class=" block top-block">
-        <div class="content">
+    <div class="top-block">
+        <Header color="black"/>
+        <div class="block content">
             <div class="title">
                 <h1>We&nbsp;take digital experiences to&nbsp;the next&nbsp;level</h1>
                 <hr size="1" color="#ffffff" />
@@ -34,9 +35,10 @@
 
 <script>
     import Whale from "./Whale";
+    import Header from "../Header";
     export default {
         name: "TopBlock",
-        components: {Whale}
+        components: {Header, Whale}
     }
 </script>
 
@@ -48,7 +50,7 @@
             display: flex;
             align-items: center;
             padding-bottom: 112px;
-            padding-right: 7.6%;
+            padding-right: 6%;
             position: relative;
             border-right: 1px solid #404142;
             &:before {
@@ -72,7 +74,7 @@
                     font-size: 36px;
                 }
                 hr {
-                    margin: 22px 0 11px;
+                    margin: 22px 0 15px;
                     width: 14%;
                     border: none;
                     color: #404142;
@@ -80,7 +82,8 @@
                     height: 1px;
                 }
                 p {
-                    font-size: 12.1px;
+                    font-size: 11.9px;
+                    font-weight: 500;
                 }
             }
             .whale {
@@ -96,12 +99,14 @@
             bottom: 0;
             width: 100%;
             height: 72px;
+            cursor: pointer;
             &__left {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 50%;
                 background-color: white;
+                transition: .18s ease-in-out;
                 .footer-links {
                     display: flex;
                     justify-content: space-around;
@@ -122,6 +127,7 @@
                 justify-content: center;
                 align-items: center;
                 width: 50%;
+                transition: .18s ease-in-out;
                 .footer-links {
                     display: flex;
                     justify-content: space-around;

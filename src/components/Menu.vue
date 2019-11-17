@@ -13,6 +13,11 @@
 <script>
     export default {
         name: "Menu",
+        data() {
+            return {
+                checked: false
+            }
+        },
         props: {
             color: {
                 type: [String, Number],
@@ -29,6 +34,7 @@
         display: block;
         position: relative;
         z-index: 1;
+        top: 2px;
         -webkit-user-select: none;
         user-select: none;
         background-color: #171717;
@@ -46,8 +52,6 @@
             width: 40px;
             height: 32px;
             position: absolute;
-            top: -7px;
-            left: -5px;
             cursor: pointer;
             opacity: 0; /* hide this */
             z-index: 2; /* and place it over the hamburger */
@@ -56,7 +60,7 @@
         }
         .icon {
             border: 1px solid #404142;
-            padding: 12px 12px 8px;
+            padding: 13px 12px 8px;
         }
         /*
          * Just a quick hamburger

@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header>
+    <header v-if="!isHomePage()">
       <Header color="black"/>
     </header>
       <transition name="fade" appear>
@@ -8,7 +8,7 @@
             <slot/>
           </main>
       </transition>
-   <footer>
+   <footer v-if="!isHomePage()">
      <Footer/>
    </footer>
   </div>
@@ -18,7 +18,16 @@
   import Header from "../components/Header";
   import Footer from "../components/Footer";
   export default {
-    components: {Footer, Header}
+    components: {Footer, Header},
+      methods: {
+          isHomePage: function() {
+              if(this.$route.path == "/" || this.$route.path == "/home" ) {
+                  return true
+              } else {
+                  return false
+              }
+          }
+      }
   }
 </script>
 
@@ -32,6 +41,11 @@
   font-family: AvenirNext;
   src: url('../assets/fonts/AvenirNextLTPro-Bold.otf') format("opentype");
   font-weight: bold;
+}
+@font-face {
+    font-family: AvenirNext;
+    src: url('../assets/fonts/AvenirNextLTPro-Demi.otf') format("opentype");
+    font-weight: 500;
 }
 body {
   font-family: AvenirNext,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;

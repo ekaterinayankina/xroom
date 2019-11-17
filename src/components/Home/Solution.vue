@@ -96,6 +96,7 @@
                         opacity: 1;
                         outline: 0;
                         font-size: 9px;
+                        font-weight: 500;
                         color: #fff;
                         line-height: 35px;
                         position: relative;

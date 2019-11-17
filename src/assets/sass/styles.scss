@@ -7,6 +7,7 @@ button {
   padding: 8px 16px;
   font: inherit;
   font-size: 13px;
+  font-weight: 500;
   color: white;
   background-color: transparent;
   cursor: pointer;
@@ -22,7 +23,45 @@ button {
   &.white {
     color: black;
     &.active {
+      color: #8b8b8b;
       border: 1px solid  #ececec;
     }
   }
+}
+
+button.make {
+  padding: 12px 35px;
+  font: inherit;
+  font-size: 9px;
+  font-weight: bold;
+  color: #2f2f2f;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #ececec;
+  text-transform: uppercase;
+  transition: .18s ease-in-out;
+  &:hover {
+    color: #fff;
+    background-color: #2f2f2f;
+  }
+  &:before {
+    content: none;
+  }
+}
+
+p.large {
+  margin-top: 24px;
+  margin-bottom: 43px;
+  font-size: 27px;
+  line-height: 45px;
+}
+p.small {
+  font-size: 13.5px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+p.title {
+  font-size: 28px;
+  font-weight: 500;
 }

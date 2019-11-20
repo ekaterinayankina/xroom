@@ -1,24 +1,9 @@
 <template>
     <div class="list">
-        <div class="list-items">
-            <g-link class="item__link" to="/"><p>IT consulting</p></g-link>
-            <g-link class="item__link" to="/"><p>Prototyping</p></g-link>
-            <g-link class="item__link" to="/"><p>Custom software development</p></g-link>
-        </div>
-        <div class="list-items">
-            <g-link class="item__link" to="/"><p>Application Integration</p></g-link>
-            <g-link class="item__link" to="/"><p>Migrating applications and data</p></g-link>
-            <g-link class="item__link" to="/"><p>Software upgrade</p></g-link>
-        </div>
-        <div class="list-items">
-            <g-link class="item__link" to="/"><p>Information Security</p></g-link>
-            <g-link class="item__link" to="/"><p>Virtualization</p></g-link>
-            <g-link class="item__link" to="/"><p>SAP Consulting</p></g-link>
-        </div>
-        <div class="list-items">
-            <g-link class="item__link" to="/"><p>Independent testing</p></g-link>
-            <g-link class="item__link" to="/"><p>Maintenance and support</p></g-link>
-            <g-link class="item__link" to="/"><p>Dedicated development centers</p></g-link>
+        <div class="list-items" v-for="item in items" v-bind:key="item.id">
+            <g-link class="item__link" to="/" v-for="link in item" v-bind:key="link.id">
+                <p>{{ link }}</p>
+            </g-link>
         </div>
     </div>
 </template>

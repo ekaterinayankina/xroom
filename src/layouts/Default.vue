@@ -8,7 +8,7 @@
             <slot/>
           </main>
       </transition>
-   <footer v-if="!isHomePage">
+   <footer v-if="!isHomePage()">
      <Footer/>
    </footer>
   </div>

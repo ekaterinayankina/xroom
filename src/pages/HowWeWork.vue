@@ -6,7 +6,7 @@
             <p class="large" data-aos="fade-up" data-aos-delay="500">Our tight-knit crew is&nbsp;at&nbsp;the core of&nbsp;our<br>
                 collaborative approach: on&nbsp;our team, no&nbsp;one<br>
                 sits out an&nbsp;inning.</p>
-            <div class="step">
+            <g-link class="step" to="/project-management">
                 <div class="step-img">
                     <RocketSvg/>
                 </div>
@@ -15,7 +15,7 @@
                     <p class="small step-description">Itransition ensures efficient use of&nbsp;resources, management of&nbsp;project risks and full<br>
                         transparency of&nbsp;the project.</p>
                 </div>
-            </div>
+            </g-link>
             <div class="step">
                 <div class="step-img">
                     <ModelsSvg/>
@@ -71,9 +71,9 @@
     }
 </script>
 
-<style lang="scss"  scoped>
+<style lang="scss" scoped>
     .how-we-work {
-        padding: 110px 15%;
+        padding: 110px 15% 128px;
         .large {
             margin-bottom: 54px;
         }
@@ -90,6 +90,7 @@
         display: flex;
         margin-bottom: 38px;
         cursor: pointer;
+        color: black;
         .step-text {
             display: flex;
             flex-direction: column;

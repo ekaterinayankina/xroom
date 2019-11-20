@@ -5,7 +5,7 @@
             <h1 class="animate-bt">We create</h1>
             <p class="animate-bt">We&nbsp;do&nbsp;not draw a&nbsp;beautiful picture, we&nbsp;offer working solutions.
                 We&nbsp;are young professionals making visual identities, digital solutions and associated services for business</p>
-            <List v-bind:items="links" class="animate-bt"/>
+            <List v-bind:items="links" class="list"/>
         </div>
     </div>
 </template>

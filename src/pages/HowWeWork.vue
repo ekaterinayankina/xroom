@@ -6,48 +6,48 @@
             <p class="large" data-aos="fade-up" data-aos-delay="500">Our tight-knit crew is&nbsp;at&nbsp;the core of&nbsp;our<br>
                 collaborative approach: on&nbsp;our team, no&nbsp;one<br>
                 sits out an&nbsp;inning.</p>
-            <g-link class="step" to="/project-management">
+            <g-link class="step" to="/project-management" data-aos="fade-up">
                 <div class="step-img">
                     <RocketSvg/>
                 </div>
                 <div class="step-text">
-                    <p class="large step-title" data-aos="fade-up">Project management</p>
+                    <p class="large step-title">Project management</p>
                     <p class="small step-description">Itransition ensures efficient use of&nbsp;resources, management of&nbsp;project risks and full<br>
                         transparency of&nbsp;the project.</p>
                 </div>
             </g-link>
-            <div class="step">
+            <div class="step" data-aos="fade-up">
                 <div class="step-img">
                     <ModelsSvg/>
                 </div>
                 <div class="step-text">
-                    <p class="large step-title" data-aos="fade-up">Models of&nbsp;cooperation</p>
+                    <p class="large step-title">Models of&nbsp;cooperation</p>
                     <p class="small step-description">Individual approach to&nbsp;choosing the interaction model allows our clients to&nbsp;optimize<br>
                         the project budget.
                     </p>
                 </div>
             </div>
-            <div class="step">
+            <div class="step" data-aos="fade-up">
                 <div class="step-img">
                     <QualitySvg/>
                 </div>
                 <div class="step-text">
-                    <p class="large step-title" data-aos="fade-up">Quality assurance</p>
+                    <p class="large step-title">Quality assurance</p>
                     <p class="small step-description">Quality control of&nbsp;software is&nbsp;an&nbsp;integral part of&nbsp;the process of&nbsp;developing and implementing<br>
                         software solutions.</p>
                 </div>
             </div>
-            <div class="step">
+            <div class="step" data-aos="fade-up">
                 <div class="step-img">
                     <TechnologiesSvg/>
                 </div>
                 <div class="step-text">
-                    <p class="large step-title" data-aos="fade-up">Technologies</p>
+                    <p class="large step-title">Technologies</p>
                     <p class="small step-description">Technological expertise Itransition includes both platforms and products of&nbsp;the world&rsquo;s leading<br>
                         software vendors and open source technologies.</p>
                 </div>
             </div>
-            <a href="#" class="btn-flip light" data-back="Make a project" data-front="Make a project"></a>
+            <a href="#" class="btn-flip light" data-back="Make a project" data-front="Make a project" data-aos="fade-up"></a>
         </div>
 
     </Layout>

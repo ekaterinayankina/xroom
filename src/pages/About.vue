@@ -29,12 +29,12 @@
       <div class="button-wrapper" data-aos="fade-up">
         <button class="make">Make a project</button>
       </div>
-      <div class="services">
+      <div class="services" data-aos="fade-up">
         <p class="title">Our services</p>
         <List v-bind:items="links"/>
       </div>
     </div>
-    <div class="find-solution">
+    <div class="find-solution" data-aos="fade-up">
       <g-image alt="" src="~/assets/img/find_solution.jpg"/>
       <div class="button-wrapper">
         <button>

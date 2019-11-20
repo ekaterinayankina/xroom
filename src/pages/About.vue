@@ -2,29 +2,31 @@
   <Layout>
     <TopBlock v-bind:title=title v-bind:subtitle=subtitle />
     <div class="about-company">
-      <p class="large">We grow brands people love for companies that are changing <br> how the world works.</p>
-      <div class="description">
-        <p class="small">We&nbsp;started Basov Design Bureau in&nbsp;2008. Our vision from day one was to&nbsp;apply strategic <br>
-          and creative thinking to&nbsp;propel startups to&nbsp;success.</p>
-        <p class="small">We&nbsp;work with companies who are challenging the status quo. This means finding new ways
-          to&nbsp;connect with people through bold ideas and experiences. We&nbsp;believe that brand is&nbsp;not just
-          a&nbsp;competitive advantage&nbsp;&mdash; it&rsquo;s a&nbsp;core driver of&nbsp;business growth.</p>
-      </div>
-      <div class="numbers">
+        <p class="large" data-aos="fade-up">We grow brands people love for companies that are changing <br> how the world works.</p>
+        <div class="description" data-aos="fade-up">
+          <p class="small">We&nbsp;started Basov Design Bureau in&nbsp;2008. Our vision from day one was to&nbsp;apply strategic <br>
+            and creative thinking to&nbsp;propel startups to&nbsp;success.</p>
+          <p class="small">We&nbsp;work with companies who are challenging the status quo. This means finding new ways
+            to&nbsp;connect with people through bold ideas and experiences. We&nbsp;believe that brand is&nbsp;not just
+            a&nbsp;competitive advantage&nbsp;&mdash; it&rsquo;s a&nbsp;core driver of&nbsp;business growth.</p>
+        </div>
+      <div class="numbers" data-aos="fade-up">
         <div class="number-block">
           <p class="number">2015</p>
           <p class="number-description">Year of foundation </p>
         </div>
+        <div class="separator"/>
         <div class="number-block">
           <p class="number">45</p>
           <p class="number-description">Employees of the company</p>
         </div>
+        <div class="separator"/>
         <div class="number-block">
           <p class="number">450</p>
           <p class="number-description">Completed projects</p>
         </div>
       </div>
-      <div class="button-wrapper">
+      <div class="button-wrapper" data-aos="fade-up">
         <button class="make">Make a project</button>
       </div>
       <div class="services">
@@ -82,16 +84,12 @@ export default {
     return {
       title: 'About Company',
       subtitle: 'We can We create',
-      data() {
-        return {
-          links: [
-            ['IT consulting', 'Prototyping', 'Custom software development'],
-            ['Application Integration', 'Migrating applications and data','Software upgrade'],
-            ['Information Security', 'Virtualization', 'SAP Consulting'],
-            ['Independent testing', 'Maintenance and support', 'Dedicated development centers']
-          ]
-        }
-      }
+      links: [
+        ['IT consulting', 'Prototyping', 'Custom software development'],
+        ['Application Integration', 'Migrating applications and data','Software upgrade'],
+        ['Information Security', 'Virtualization', 'SAP Consulting'],
+        ['Independent testing', 'Maintenance and support', 'Dedicated development centers']
+      ]
     }
   },
   metaInfo: {
@@ -124,7 +122,16 @@ export default {
       .number-description {
         margin-top: 0;
         font-size: 10.5px;
+        white-space: nowrap;
       }
+    }
+    .separator {
+      margin-top: 68px;
+      margin-right: 46px;
+      margin-left: 46px;
+      height: 100%;
+      width: inherit;
+      border-top: solid 1px #f7f4f4;
     }
   }
   .services {
@@ -135,18 +142,22 @@ export default {
   }
   .find-solution {
     position: relative;
+    overflow: hidden;
     img {
       width: 100%;
+      transition: all ease-in-out .5s;
     }
     .button-wrapper {
       position: absolute;
-      bottom: 77px;
+      bottom: 0px;
       right: 0;
       left: 0;
       margin: auto;
       width: 70%;
       height: 72px;
       text-align: center;
+      opacity: 0;
+      transition: all ease-in-out .5s;
       button {
         width: 100%;
         height: 100%;
@@ -154,6 +165,21 @@ export default {
         text-transform: uppercase;
         font-weight: 100;
         border: solid 1px white;
+        transition: all ease-in-out .5s;
+        &:hover {
+          transform: scale(1.05);
+          background-color: rgba(0, 0, 0, 0.2);;
+        }
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+        opacity: 0.9;
+      }
+      .button-wrapper {
+        opacity: 1;
+        bottom: 77px;
       }
     }
   }

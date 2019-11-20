@@ -129,6 +129,22 @@
                     color: black;
                     font-size: 13px;
                     font-weight: 500;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        width: 100%;
+                        height: 108%;
+                        opacity: 0;
+                        transition: all .2s ease-in-out;
+                    }
+                    &:hover {
+                        &:after {
+                            opacity: 1;
+                            border-bottom: solid 1px black;
+                        }
+                    }
                 }
             }
         }

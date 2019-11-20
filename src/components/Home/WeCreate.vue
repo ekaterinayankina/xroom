@@ -2,10 +2,10 @@
     <div class="create-block">
         <Header color="white"/>
         <div class="block">
-            <h1>We create</h1>
-            <p>We&nbsp;do&nbsp;not draw a&nbsp;beautiful picture, we&nbsp;offer working solutions.
+            <h1 class="animate-bt">We create</h1>
+            <p class="animate-bt">We&nbsp;do&nbsp;not draw a&nbsp;beautiful picture, we&nbsp;offer working solutions.
                 We&nbsp;are young professionals making visual identities, digital solutions and associated services for business</p>
-            <List v-bind:items="links"/>
+            <List v-bind:items="links" class="animate-bt"/>
         </div>
     </div>
 </template>

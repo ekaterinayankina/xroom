@@ -71,7 +71,8 @@ export default {
         bigSectionsDestination: 'top',
         touchSensitivity: 22,
         scrollOverflow: true,
-        parallax: true
+        parallax: true,
+        parallaxOptions: {type: 'cover', percentage: 100, property: 'translate'},
       }
     }
   }

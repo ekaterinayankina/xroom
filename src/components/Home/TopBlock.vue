@@ -3,9 +3,11 @@
         <Header color="black"/>
         <div class="block content">
             <div class="title">
-                <h1>We&nbsp;take digital experiences to&nbsp;the next&nbsp;level</h1>
-                <hr size="1" color="#ffffff" />
-                <p>
+                <div class="text-wrapper">
+                    <h1 class="animate-lr">We&nbsp;take digital experiences to&nbsp;the next&nbsp;level</h1>
+                </div>
+                <hr class="animate-lr d-2" size="1" color="#ffffff" />
+                <p class="animate-lr d-3">
                     X-ROM Consulting Group
                 </p>
             </div>
@@ -119,6 +121,10 @@
                         &:first-child {
                             font-weight: 500;
                         }
+                        &:hover {
+                            font-weight: 500;
+                            font-size: 12.7px;
+                        }
                     }
                 }
             }
@@ -136,6 +142,10 @@
                     a {
                         margin: 0 31px;
                         font-size: 13px;
+                        &:hover {
+                            font-weight: 500;
+                            font-size: 12.7px;
+                        }
                     }
                 }
                 &:hover {

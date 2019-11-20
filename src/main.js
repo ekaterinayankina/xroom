@@ -13,7 +13,15 @@ import 'animate.css'
 import Vue from 'vue'
 import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
 import VueFullPage from 'vue-fullpage.js'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
+/*import '~/assets/js/Card-polygon.js'
+import '~/assets/js/demo-3.js'
+import '~/assets/js/vendors/trianglify.min.js'
+import '~/assets/js/vendors/TweenMax.min.js'
+import '~/assets/js/vendors/ScrollToPlugin.min.js'
+import '~/assets/js/vendors/cash.min.js'*/
 
 config.autoAddCss = false;
 library.add(faGithub, faTwitter);
@@ -32,6 +40,15 @@ export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'stylesheet',
     href: 'https://unpkg.com/fullpage.js/dist/fullpage.min.css'
+  });
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css'
   })
 
 }
+AOS.init({
+  duration: 1000,
+  once: true
+});
+

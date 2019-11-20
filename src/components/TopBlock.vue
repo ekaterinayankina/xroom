@@ -2,17 +2,17 @@
     <div class="top-block">
         <div class="block content">
             <div class="title">
-                <h1>{{ title }}</h1>
-                <hr size="1"/>
-                <p>{{ subtitle }}</p>
+                <h1 data-aos="fade-right" data-aos-duration="1000">{{ title }}</h1>
+                <hr size="1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"/>
+                <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">{{ subtitle }}</p>
             </div>
         </div>
         <div class="footer">
             <p class="footer-links">
-                <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">facebook</a>
-                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">instagram</a>
-                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">Behance</a>
-                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">vk</a>
+                <a href="https://gridsome.org/docs/" target="_blank" rel="noopener" data-aos="flip-left">facebook</a>
+                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener" data-aos="flip-left" data-aos-delay="100">instagram</a>
+                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener" data-aos="flip-left" data-aos-delay="200">Behance</a>
+                <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener" data-aos="flip-left" data-aos-delay="300">vk</a>
             </p>
         </div>
     </div>

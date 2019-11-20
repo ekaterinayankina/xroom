@@ -3,7 +3,7 @@
         <div class="content">
             <div class="project">
                 <h2 class="title">Homepage</h2>
-                <g-image class="project-img" alt="" src="~/assets/img/projects/project1.png" width="720px"/>
+                <g-image class="first-project-img" alt="" src="~/assets/img/projects/project1.png" width="720px"/>
                 <div class="footer black">
                     <p class="project-name">Bike Board Shop</p>
                     <button>View</button>
@@ -19,7 +19,7 @@
             </div>
             <div class="project">
                 <h2 class="title"></h2>
-                <g-image alt="" src="~/assets/img/projects/project3.png" width="720px"/>
+                <g-image alt=""src="~/assets/img/projects/project3.png" width="720px"/>
                 <div class="footer white">
                     <p class="project-name">Vitamin-Z Dome system</p>
                     <button>View</button>
@@ -45,7 +45,7 @@
             </div>
             <div class="project">
                 <h2 class="title"></h2>
-                <g-image alt="" src="~/assets/img/projects/project6.png" width="720px"/>
+                <g-image alt=""src="~/assets/img/projects/project6.png" width="720px"/>
                 <div class="footer white">
                     <p class="project-name">SCG printing</p>
                     <button>View</button>
@@ -88,6 +88,16 @@
                 width: 49.8%;
                 max-height: 710px;
                 overflow: hidden;
+                &:hover:not(.projects-union) {
+                    img {
+                        transform: scale(1.1);
+                        opacity: 0.9;
+                    }
+                    .footer {
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
                 .title {
                     position: absolute;
                     z-index: 1;
@@ -97,22 +107,29 @@
                     font-size: 16px;
                     letter-spacing: 0.4px;
                     font-weight: 600;
+                    transition: all ease-in-out .5s;
                 }
-                .project-img {
+                .first-project-img {
                     position: absolute;
                     z-index: 0;
                     width: 715px;
                     left: 3px;
+                    transition: all ease-in-out .5s;
+                }
+                img {
+                    transition: all ease-in-out .5s;
                 }
                 .footer {
                     position: absolute;
                     z-index: 1;
-                    bottom: 0;
+                    bottom: -50px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     height: 73px;
                     width: 100%;
+                    opacity: 0;
+                    transition: all ease-in-out .5s;
                     &.white {
                         background-color: rgba(255, 255, 255, 0.15);
                     }

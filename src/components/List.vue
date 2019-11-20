@@ -57,13 +57,18 @@
                 color: black;
                 line-height: 36px;
                 white-space: nowrap;
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 82%;
+                    opacity: 0;
+                    transition: all .2s ease-in-out;
+                }
                 &:hover {
                     &:after {
-                        position: absolute;
-                        left: 0;
-                        content: '';
-                        width: 100%;
-                        height: 82%;
+                        opacity: 1;
                         border-bottom: solid 1px black;
                     }
                 }

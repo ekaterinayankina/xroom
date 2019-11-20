@@ -9,7 +9,6 @@
                     <p>We&nbsp;do&nbsp;not draw a&nbsp;beautiful picture, we&nbsp;offer
                         working solutions. We&nbsp;are young professionals making visual identities,
                         digital solutions and associated services for business</p>
-<!--                    <button class="black active">Find solution</button>-->
                     <a href="#" class="btn-flip" data-back="Find solution" data-front="Find solution"></a>
                 </div>
                 <div class="examples">
@@ -44,7 +43,6 @@
 </script>
 
 <style lang="scss" scoped>
-    $speed: 0.5s;
     .solution {
         padding-top: 27px;
         .block {
@@ -90,62 +88,6 @@
                         font-size: 9px;
                         color: white;
                         margin-top: 24px;
-                    }
-                    .btn-flip{
-                        margin-top: 24px;
-                        opacity: 1;
-                        outline: 0;
-                        font-size: 9px;
-                        font-weight: 500;
-                        color: #fff;
-                        line-height: 35px;
-                        position: relative;
-                        text-align: center;
-                        display: inline-block;
-                        text-decoration: none;
-                        text-transform: uppercase;
-
-                        &:hover{
-
-                            &:after{
-                                opacity: 1;
-                                transform: translateY(0) rotateX(0);
-                            }
-
-                            &:before{
-                                opacity: 0;
-                                transform: translateY(50%) rotateX(90deg);
-                            }
-                        }
-
-                        &:after{
-                            top: 0;
-                            left: 0;
-                            opacity: 0;
-                            width: 100%;
-                            color: black;
-                            display: block;
-                            transition: $speed;
-                            position: absolute;
-                            background: #ececec;
-                            content: attr(data-back);
-                            transform: translateY(-50%) rotateX(90deg);
-                        }
-
-                        &:before{
-                            top: 0;
-                            left: 0;
-                            opacity: 1;
-                            color: white;
-                            display: block;
-                            padding: 0 30px;
-                            line-height: 35px;
-                            transition: $speed;
-                            position: relative;
-                            content: attr(data-front);
-                            transform: translateY(0) rotateX(0);
-                            border: 1px solid #404142;
-                        }
                     }
                 }
                 .examples {

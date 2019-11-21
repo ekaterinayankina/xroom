@@ -51,7 +51,7 @@
             .title {
                 display: flex;
                 flex-direction: column;
-                width: 45%;
+                width: 60%;
                 h1 {
                     margin-bottom: -6px;
                     margin-top: -9px;

@@ -210,8 +210,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "../assets/sass/projects/card.css";
-    @import "../assets/sass/projects/demo.css";
-    @import "../assets/sass/projects/pattern.css";
 
 </style>

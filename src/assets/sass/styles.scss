@@ -123,20 +123,31 @@ $speed: 0.5s;
 }
 
 
-p.large {
+p.large, pre.large {
   margin-top: 24px;
   margin-bottom: 43px;
   font-size: 27px;
   line-height: 45px;
 }
-p.small {
+p.small, pre.small {
   font-size: 13.5px;
   line-height: 24px;
   margin-bottom: 24px;
 }
-p.title {
+p.smaller {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 27px;
+}
+p.title, pre.title {
   font-size: 28px;
   font-weight: 500;
+}
+
+pre {
+  margin: 0;
+  font-family: AvenirNext,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height: 1.5;
 }
 
 

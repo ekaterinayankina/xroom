@@ -101,6 +101,9 @@
                         height: 251px;
                         background-color: unset;
                         color: white;
+                        img {
+                            width: 340px;
+                        }
                         p {
                             position: absolute;
                             bottom: 8px;
@@ -110,6 +113,14 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    @media (max-width: 1370px) {
+        .solution .block .content .examples .example {
+            height: 186px;
+            img {
+                width: 250px;
             }
         }
     }

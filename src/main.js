@@ -16,13 +16,6 @@ import VueFullPage from 'vue-fullpage.js'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-/*import '~/assets/js/Card-polygon.js'
-import '~/assets/js/demo-3.js'
-import '~/assets/js/vendors/trianglify.min.js'
-import '~/assets/js/vendors/TweenMax.min.js'
-import '~/assets/js/vendors/ScrollToPlugin.min.js'
-import '~/assets/js/vendors/cash.min.js'*/
-
 config.autoAddCss = false;
 library.add(faGithub, faTwitter);
 

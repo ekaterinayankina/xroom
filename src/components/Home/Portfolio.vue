@@ -164,4 +164,13 @@
             }
         }
     }
+    @media (max-width: 1370px) {
+        .portfolio .content {
+            .project {
+                img, .first-project-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 </style>

@@ -153,7 +153,7 @@
             margin-bottom: 8px;
             .title {
                 position: absolute;
-                top: 37%;
+                top: 20%;
                 right: 0;
                 left: 0;
                 margin: auto;
@@ -200,6 +200,7 @@
                     opacity: 0.9;
                 }
                 .title {
+                    top: 37%;
                     opacity: 1;
                 }
                 .button-wrapper {

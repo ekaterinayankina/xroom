@@ -67,6 +67,7 @@ export default {
       options: {
         licenseKey:'',
         anchors: ['','we-create', 'solution', 'technologies', 'portfolio', 'clients','contact'],
+        sectionsColor: ['#ffffff', '#ffffff', '#171717', '#ffffff', '#171717', '#171717', '#ffffff'],
         fitToSection: false,
         bigSectionsDestination: 'top',
         touchSensitivity: 22,

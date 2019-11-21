@@ -163,4 +163,17 @@
             }
         }
     }
+    @media (max-width: 1370px) {
+        .top-block {
+            .footer__left, .footer__right {
+                .footer-links {
+                    margin-left: 0;
+                    margin-right: 0;
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 </style>

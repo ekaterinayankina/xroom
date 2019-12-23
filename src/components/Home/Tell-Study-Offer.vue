@@ -57,4 +57,19 @@
             font-size: 10.5px;
         }
     }
+    @media (max-width: 767px) {
+        .container {
+            padding-bottom: 40px;
+            .titles {
+                padding: 0;
+            }
+            .subtitles {
+                flex-direction: column;
+                p {
+                    max-width: 100%;
+                    text-align: start;
+                }
+            }
+        }
+    }
 </style>

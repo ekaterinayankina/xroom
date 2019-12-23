@@ -57,4 +57,20 @@
             }
         }
     }
+    @media (max-width: 767px) {
+        .create-block .block {
+            padding-top: 0;
+            h1 {
+                font-size: 27px;
+            }
+            p {
+                max-width: 90%;
+                font-size: 12px;
+                line-height: 30px;
+            }
+            .list {
+                margin-top: 30px;
+            }
+        }
+    }
 </style>

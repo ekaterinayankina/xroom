@@ -171,6 +171,73 @@
                     margin-right: 0;
                     a {
                         font-size: 10px;
+                        &:hover {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 62.5em) {
+        .top-block {
+            .content {
+                flex-direction: column-reverse;
+                .title {
+                    h1 {
+                        font-size: 27px;
+                    }
+                }
+                .whale {
+                    svg {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .footer__left, .footer__right {
+                .footer-links {
+                    margin-left: 0;
+                    margin-right: 0;
+                    a {
+                        margin-right: 16px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .top-block {
+            .content {
+                &:before {
+                    content: none;
+                }
+                .title {
+                    width: 100%;
+                }
+                .whale {
+                    height: 250px;
+                }
+            }
+            .footer {
+                flex-direction: column;
+                .footer__left, .footer__right {
+                    width: 100%;
+                    margin-left: 15%;
+                    margin-right: 6.5%;
+                    justify-content: flex-start;
+                }
+                .footer__left {
+                    margin-top: 45px;
+                    .footer-links {
+                        margin-right: 15px;
+                        flex-direction: column;
+                        a {
+                            &:first-child {
+                                width: 50%;
+                            }
+                        }
                     }
                 }
             }

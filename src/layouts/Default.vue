@@ -17,6 +17,8 @@
 <script>
   import Header from "../components/Header";
   import Footer from "../components/Footer";
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
   export default {
     components: {Footer, Header},
       methods: {
@@ -27,6 +29,19 @@
                   return false
               }
           }
+      },
+      computed: {
+        isClient:  function () {
+            return typeof window !== 'undefined'
+        }
+      },
+      created () {
+          if (this.isClient) {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
       }
   }
 </script>

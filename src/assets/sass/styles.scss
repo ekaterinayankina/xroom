@@ -48,6 +48,10 @@ button.make {
   &:before {
     content: none;
   }
+  @media (max-width: 62.5em) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 $speed: 0.5s;
@@ -169,13 +173,13 @@ pre {
   animation-delay: .45s;
 }
 .d-4 {
-  transition-delay: .6s;
+  animation-delay: .6s;
 }
 .d-5 {
-  transition-delay: .75s;
+  animation-delay: .75s;
 }
 .d-6 {
-  transition-delay: .9s;
+  animation-delay: .9s;
 }
 
 @keyframes left-to-right {

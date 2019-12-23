@@ -124,4 +124,16 @@
             }
         }
     }
+    @media (max-width: 768px) {
+        .solution .block .content {
+            flex-direction: column;
+            .text {
+                max-width: 100%;
+            }
+            .examples {
+                padding-left: 0;
+                max-width: 100%;
+            }
+        }
+    }
 </style>

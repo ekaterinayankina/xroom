@@ -55,7 +55,7 @@
                 <h2 class="title"></h2>
                 <g-image alt="" src="~/assets/img/projects/project7.png" width="720px"/>
                 <div class="footer black">
-                    <p class="project-name">Yokohama tires APP</p>
+                    <p class="project-name">Some Project</p>
                     <button>View</button>
                 </div>
             </div>

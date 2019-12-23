@@ -91,5 +91,19 @@
             }
         }
     }
+    @media (max-width: 62.5em) {
+        .top-block {
+            .content {
+                .title {
+                    width: 100%;
+                }
+            }
+            .footer {
+                .footer-links a {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
 </style>
 
